@@ -69,10 +69,10 @@ a {
     max-width: 1158px;
     padding: 0 15px;
   }
-}
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 /*common*/
 /*header*/
@@ -116,6 +116,7 @@ a {
 .burger-icon {
   display: block;
   fill: #2f2f37;
+  background-color: transparent;
 }
 @media screen and (min-width: 768px) {
   .burger-btn {
@@ -161,6 +162,12 @@ a {
   .contacts {
     font-style: normal;
     display: block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
   }
   .nav-link:hover,
   .nav-link:focus,
@@ -283,6 +290,15 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   gap: 24px;
+}
+.menu-contacts {
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
 .contacts-link.tel {
@@ -421,8 +437,8 @@ a {
   }
   @media (min-resolution: 2x) {
     .start-page {
-      padding-top: 72px;
-      padding-bottom: 72px;
+      padding-top: 112px;
+      padding-bottom: 112px;
       background-position: center;
       background-repeat: no-repeat;
       background-image: linear-gradient(
@@ -461,8 +477,8 @@ a {
   }
   @media (min-resolution: 2x) {
     .start-page {
-      padding-top: 72px;
-      padding-bottom: 72px;
+      padding-top: 188px;
+      padding-bottom: 188px;
       background-position: center;
       background-repeat: no-repeat;
       background-image: linear-gradient(
@@ -523,6 +539,9 @@ a {
   .advantages-item {
     max-width: 356px;
   }
+  .advantages-item-title {
+    text-align: left;
+  }
 }
 @media screen and (min-width: 1158px) {
   .advantages-list {
@@ -549,6 +568,9 @@ a {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+  }
+  .advantage-item-text {
+    font-weight: 400;
   }
   .advantages-item {
     width: calc((100% - 72px) / 4);
@@ -738,6 +760,7 @@ a {
   .portfolio {
     padding-top: 120px;
     padding-bottom: 120px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   }
 
   .portfolio-list {
@@ -887,6 +910,9 @@ a {
   .footer-logo-ps {
     text-align: left;
   }
+  .footer-social-text {
+    text-align: left;
+  }
 
   .footer-form {
     display: flex;
@@ -909,7 +935,10 @@ a {
 
 @media screen and (min-width: 1158px) {
   .container.footer {
-    padding-left: 0;
+    width: 1158px;
+    padding-left: 15px;
+    gap: 0;
+    flex-wrap: nowrap;
   }
   .page-footer {
     padding-top: 100px;
@@ -918,12 +947,17 @@ a {
   .footer-logo-ps {
     margin-right: 120px;
   }
+  .footer-social {
+    margin-right: 80px;
+  }
   .footer-social-text {
     text-align: left;
   }
 
   .footer-subscribe {
-    margin-left: auto;
+  }
+  .footer-btn {
+    max-width: 165px;
   }
 }
 /*footer*/
